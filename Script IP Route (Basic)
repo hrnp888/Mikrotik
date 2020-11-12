@@ -1,0 +1,4 @@
+/ip route
+add distance=1 gateway=10.200.20.1
+
+Untuk IP gateway disesuaikan dengan IP gateway teman-teman ya
