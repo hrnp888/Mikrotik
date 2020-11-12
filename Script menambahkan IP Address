@@ -1,2 +1,4 @@
 /ip address
 add address=10.200.20.1/24 interface=ether5 network=10.200.20.0
+
+Untuk IP dan Interface bisa disesuaikan dengan keinginan masing - masing yes
