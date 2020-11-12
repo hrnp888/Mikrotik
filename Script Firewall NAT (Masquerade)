@@ -1,0 +1,5 @@
+/ip firewall nat
+add action=masquerade chain=srcnat comment="Local to INET" out-interface=ether5
+
+Fungsi NAT sendiri yaitu agar jaringan local bisa terhubung ke internet.. 
+Dan untuk "out-interface" tinggal disesuaikan saja dengan port WAN nya yes
