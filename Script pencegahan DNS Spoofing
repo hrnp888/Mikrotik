@@ -1,0 +1,3 @@
+/ip firewall filter
+add action=drop chain=input dst-port=53 in-interface-list=WAN protocol=tcp
+add action=drop chain=input dst-port=53 in-interface-list=WAN protocol=udp
