@@ -1,0 +1,1 @@
+:for e from 1  to 254 do={ /queue simple add name="User-$e" target="10.100.10.$e" max-limit=5M/5M}
