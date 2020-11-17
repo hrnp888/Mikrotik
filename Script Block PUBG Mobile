@@ -1,0 +1,8 @@
+/ip firewall filter
+
+add action=add-dst-to-address-list address-list=PUBG address-list-timeout=none-dynamic chain=input comment="Add dan Block PUBG" dst-port=10012,17500 protocol=tcp
+add action=add-dst-to-address-list address-list=PUBG address-list-timeout=none-dynamic chain=input dst-port="10010,10013,10039,10096,10491,10612,11455,12235,13748,13894,13972,20000-20002" protocol=udp
+add action=drop chain=input dst-address-list=PUBG in-interface=bridge1 protocol=tcp
+add action=drop chain=input dst-address-list=PUBG in-interface=bridge1 protocol=udp
+
+Untuk parameter in-interface nanti tinggal disesuaikan saja dengan port LAN ya
