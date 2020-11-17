@@ -1,6 +1,5 @@
 /ip firewall filter
-add action=add-dst-to-address-list address-list=ML address-list-timeout=none-dynamic chain=input comment="Add dan Block ML"
-dst-port=30000-30200,5001,5003,9001 protocol=tcp
+add action=add-dst-to-address-list address-list=ML address-list-timeout=none-dynamic chain=input dst-port=30000-30200,5001,5003,9001 protocol=tcp
 add action=drop chain=input dst-address-list=ML in-interface=bridge1 protocol=tcp
 
 parameter in-interface nanti disesuaikan saja dengan port LAN masing-masing ya
