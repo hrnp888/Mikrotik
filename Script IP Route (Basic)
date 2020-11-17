@@ -1,4 +1,5 @@
 /ip route
 add distance=1 gateway=10.200.20.1
 
-Untuk IP gateway disesuaikan dengan IP gateway teman-teman ya
+Perlu dicatat bahwa ini adalah Setup dasar router agar bisa konek ke internet, dan Script IP Route diatas adalah salah satu caranya 
+lalu untuk gateway disesuaikan dengan IP kalian ya
