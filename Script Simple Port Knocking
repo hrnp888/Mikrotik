@@ -1,0 +1,6 @@
+/ip firewall filter
+add action=add-src-to-address-list address-list=ping address-list-timeout=1d
+chain=input protocol=icmp
+add action=drop chain=input dst-port=8291 protocol=tcp src-address-list=!ping
+
+Perlu dicatat jika menghendaki IP didalam Address List "ping" tidak selamanya berada daftar group "ping" maka bisa definisikan parameter timeout sesuai dengan keinginan masing - masing
