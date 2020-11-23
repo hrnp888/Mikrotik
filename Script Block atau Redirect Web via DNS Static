@@ -1,0 +1,7 @@
+/ip dns static
+add address=127.0.0.1 regexp="^.+\\.facebook\\.com\$"
+add address=127.0.0.1 name=facebook.com
+
+/ip firewall nat
+add action=redirect chain=dstnat dst-port=53 protocol=tcp
+add action=redirect chain=dstnat dst-port=53 protocol=udp
