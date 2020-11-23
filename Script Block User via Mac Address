@@ -1,0 +1,3 @@
+/ip firewall filter
+add chain=input action=drop src-mac-address=20:47:XX:XX:XX:XX
+add chain=forward action=drop src-mac-address=20:47:XX:XX:XX:XX
