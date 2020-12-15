@@ -1,0 +1,4 @@
+/ip dns
+set allow-remote-requests=yes servers=8.8.8.8,8.8.4.4
+
+allow-remote request bisa diisi yes atau no, kalau di policy sudah ditambahkan command anti dns spoofing itu tidak masalah jika allow remote request nya di yes.. karena dns resolver hanya berada di local saja
