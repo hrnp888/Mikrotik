@@ -1,0 +1,12 @@
+Kalau kalian bekerja di perusahaan yang bergerak di bidang jasa IT di kantor biasanya ada tuh yang request "mas IP 192.168...... tolong dibukain port 80 biar bisa diakses dari public" nah karena itu saya mau kasih tutor nya nih, jadi gaperlu nyari kemana2 :D
+berikut command nya :
+
+/ip firewall nat
+add action=dst-nat chain=dstnat disabled=yes dst-address=192.168.100.2
+dst-port=8801 protocol=tcp to-addresses=10.10.10.2 to-ports=80
+
+penjelasan :
+parameter "dst-address" itu nantinya bisa diisi dengan IP Public kalian
+parameter "dst-port" itu bisa diisikan port yang akan digunakan di Public nantinya, bisa juga disamakan portnya dengan port yang ada di parameter "to-ports" tergantung dari request
+parameter "to-addresses" itu diisikan dengan IP local yang ingin di forwarding
+parameter "to-ports" itu diisikan dengan port IP local tadi
