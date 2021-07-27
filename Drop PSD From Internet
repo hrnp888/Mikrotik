@@ -1,0 +1,3 @@
+/ip firewall filter
+chain=input action=drop protocol=tcp psd=4,3s,3,1 in-interface=(Ether ISP)
+log=no log-prefix="" 
