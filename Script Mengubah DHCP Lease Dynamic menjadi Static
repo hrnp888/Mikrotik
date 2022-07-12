@@ -1,0 +1,8 @@
+[
+:local date [/system clock get date]
+:local time [/system clock get time]
+:foreach lease in=[/ip dhcp-server lease find dynamic] do={
+	/ip dhcp-server lease make-static $lease
+	/ip dhcp-server lease comment comment="$date $time" $lease
+}
+]
